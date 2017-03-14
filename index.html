@@ -54,12 +54,12 @@
 
 <!-- Image Header -->
 
-<div class="w3-row" style="padding-top: 25px">
+<div class="w3-row" style="padding-top: 25px;">
   <div class="w3-container  w3-center">
-    <img src="images/logo.jpg">
+    <img src="images/voca_logo_v2.jpg" style="height: 300px; padding-top: 25px">
   </div>
   <div class="w3-container w3-center" style="padding-bottom: 10px">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-large w3-theme w3-hover-teal" title="VOCA">Revolutionzing the Career Narrative</button>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-large w3-theme w3-hover-teal" title="VOCA">The Story of your Career</button>
   </div>
 </div>
 
@@ -145,20 +145,20 @@
     <p>Choose a pricing plan that fits your needs.</p><br>
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-blue">
+        <li class="w3-orange">
           <p class="w3-xlarge">Basic</p>
         </li>
         <li class="w3-padding-16"><b>Unlimited</b> Profiles</li>
-        <li class="w3-padding-16"><b>5</b> Goal Center & Roadmap</li>
-        <li class="w3-padding-16"><b>1</b> Dashboard</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16"><b>Lite</b> Goal Center</li>
+        <li class="w3-padding-16"><b>Lite</b> Roadmap</li>
+        <li class="w3-padding-16"><b>No</b> Dashboard</li>
         <li class="w3-padding-16">
           <h2 class="w3-wide"><i class="fa fa-usd"></i> 0</h2>
           <span class="w3-opacity">nothing like free</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
         <form method="post" action="mailto:founders@vocasoftware.com?subject=Sign Up for Basic Plan&message=message">
-          <button class="w3-button w3-blue w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+          <button class="w3-button w3-orange w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
           </form>
         </li>
       </ul>
@@ -170,9 +170,9 @@
           <p class="w3-xlarge">Pro</p>
         </li>
         <li class="w3-padding-16"><b>Unlimited</b> Profiles</li>
-        <li class="w3-padding-16"><b>Unlimited</b> Goal Center & Roadmap</li>
+        <li class="w3-padding-16"><b>Unlimited</b> Goal Center</li>
+        <li class="w3-padding-16"><b>Unlimited</b> Roadmap</li>
         <li class="w3-padding-16"><b>5</b> Dashboards</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
         <li class="w3-padding-16">
           <h2 class="w3-wide"><i class="fa fa-usd"></i> 12</h2>
           <span class="w3-opacity">per user per month</span>
@@ -187,20 +187,20 @@
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-red">
+        <li class="w3-blue">
           <p class="w3-xlarge">Enterprise</p>
         </li>
         <li class="w3-padding-16"><b>Unlimited</b> Profiles</li>
-        <li class="w3-padding-16"><b>Unlimited</b> Goal Center & Roadmap</li>
-        <li class="w3-padding-16"><b>Unlimited</b> Dashboards</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16"><b>Unlimited</b> Goal Center</li>
+        <li class="w3-padding-16"><b>Unlimited</b> Roadmap</li>
+        <li class="w3-padding-16"><b>Unlimited</b> Dashboard</li>
         <li class="w3-padding-16">
           <h2 class="w3-wide"><i class="fa fa-usd"></i> 18</h2>
           <span class="w3-opacity">per user per month</span>
         </li>
         <li class="w3-theme-l5 w3-padding-24">
         <form method="post" action="mailto:founders@vocasoftware.com?subject=Sign Up for Enterprise Plan&message=message">
-          <button class="w3-button w3-red w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+          <button class="w3-button w3-blue w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
         </form>
         </li>
       </ul>
@@ -214,9 +214,9 @@
     <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
       <h3>Address</h3>
       <p>Swing by for a cup of coffee, or just to play with Voca Software!!</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>      Los Angeles, US</p>
-      <!-- <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>      +1</p> -->
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>    founders@vocasoftware.com</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>      Los Angeles, US</p>
+      <!-- <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>      +1</p> -->
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>    founders@vocasoftware.com</p>
     </div>
     <div class="w3-col m7">
       <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="mailto:founders@vocasoftware.com" method="GET">
@@ -248,7 +248,6 @@ function myMap()
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
   var marker = new google.maps.Marker({
     position: myCenter,
   });
@@ -266,33 +265,27 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 <!-- <div class="w3-container w3-padding-64 w3-center" id="team">
 <h2>OUR TEAM</h2>
 <p>Check out our products</p>
-
 <div class="w3-row"><br>
-
 <div class="w3-quarter">
   <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Profile</h3>
   <p>Interactive Timeline</p>
 </div>
-
 <div class="w3-quarter">
   <img src="images/goalcenter.jpg" alt="Boss" style="width:45%" class="w3-hover-opacity">
   <h3>Goal Center</h3>
   <p>Track your goals</p>
 </div>
-
 <div class="w3-quarter">
   <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Roadmap</h3>
   <p>Chart your destiny</p>
 </div>
-
 <div class="w3-quarter">
   <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Manager's Dashboard</h3>
   <p>Empower your people</p>
 </div>
-
 </div>
 </div> -->
 
@@ -324,12 +317,10 @@ function w3_open() {
     x.style.paddingTop = "10%";
     x.style.display = "block";
 }
-
 // Close side navigation
 function w3_close() {
     document.getElementById("mySidenav").style.display = "none";
 }
-
 // Used to toggle the menu on smaller screens when clicking on the menu button
 function openNav() {
     var x = document.getElementById("navDemo");
